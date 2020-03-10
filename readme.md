@@ -20,3 +20,5 @@ Ultrasonic Sensor HC-SR04 and Arduino Tutorial
 
 Diferença Entre Medidores de Vazão Ultrassônicos por Efeito Doppler e Tempo de Transito
 [link](https://br.omega.com/artigos-tecnicos/dif-between-doppler-transit-time-ultrasonic-flow-meters.html)
+
+[Ultrasonic flow measurement](https://forum.arduino.cc/index.php?topic=282034.0)

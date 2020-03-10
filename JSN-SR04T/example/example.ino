@@ -2,9 +2,11 @@
 // Define Trig and Echo pin:
 #define trigPin 2
 #define echoPin 3
+
 // Define variables:
 long duration;
 int distance;
+
 void setup() {
   // Define inputs and outputs
   pinMode(trigPin, OUTPUT);
@@ -14,15 +16,16 @@ void setup() {
   Serial.begin(9600);
 }
 void loop() {
+  
   // Clear the trigPin by setting it LOW:
-  digitalWrite(trigPin, LOW);
+  digitalWrite(trigPin, LOW);  
   
   delayMicroseconds(5);
- // Trigger the sensor by setting the trigPin high for 10 microseconds:
-  digitalWrite(trigPin, HIGH);
+  // Trigger the sensor by setting the trigPin high for 10 microseconds:
+  digitalWrite(trigPin, HIGH);  
   delayMicroseconds(10);
-  digitalWrite(trigPin, LOW);
-  
+  digitalWrite(trigPin, LOW);  
+
   // Read the echoPin. pulseIn() returns the duration (length of the pulse) in microseconds:
   duration = pulseIn(echoPin, HIGH);
   
@@ -36,6 +39,6 @@ void loop() {
   Serial.print("Duration = ");
   Serial.print(duration);
   Serial.println(" microseconds");
-  
-  delay(1000);
+
+  delay(100);
 }
